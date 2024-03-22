@@ -13,9 +13,10 @@
     border: none;
     outline: none;
     background: none;
-    padding: 10px 24px;
+    padding: 20px 42px; /* Increased adding */
     border-radius: 7px;
-    min-width: 142px;
+    min-width: 199px; /* Increased min-width */
+    height: auto; /* Let height adjust to content */
     -webkit-appearance: none;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
@@ -26,20 +27,22 @@
     transform: scale(var(--scale, 1));
     transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
+
 .button span {
     display: block;
-    font-size: 14px;
+    font-size: 18px; /* Increased font-size */
     line-height: 25px;
     font-weight: 600;
     opacity: var(--span-opacity, 1);
     transform: translateX(var(--span-x, 0)) translateZ(0);
     transition: transform 0.4s ease var(--span-delay, 0.2s), opacity 0.3s ease var(--span-delay, 0.2s);
 }
+
 .button .trash {
     display: block;
     position: relative;
     left: -8px;
-    transform: translate(var(--trash-x, 0), var(--trash-y, 1px)) translateZ(0) scale(var(--trash-scale, 0.64));
+    transform: translate(var(--trash-x, 0), var(--trash-y, 1px)) translateZ(0) scale(var(--trash-scale, 0.8)); /* Increased icon size */
     transition: transform 0.5s;
 }
 .button .trash:before, .button .trash:after {
